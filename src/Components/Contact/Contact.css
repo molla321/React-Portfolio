@@ -1,0 +1,81 @@
+.container.contact_-container {
+    width: 58%;
+    display: grid;
+    grid-template-columns: 30% 58%;
+    gap: 12%;
+    position: relative;
+}
+.contact__options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.icon {
+
+    font-size: 2rem;
+    color: var(--title-color);
+    margin-bottom: var(--mb-0-25);
+}
+.contact__option {
+    background: var(--container-color);
+    padding: 2.2rem 0.2rem;
+    border-radius: 3.2rem;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+.contact__option:hover {
+    background: transparent;
+    border-color: var(--title-color);
+}
+.contact__option a {
+    margin-top: 0.8rem;
+    display: inline-block;
+    font-size: 0.9rem;
+}
+.contact__card-title {
+    font-size: var(--small-font-size);
+    color: aqua;
+}
+
+/* =========== from ============ */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+input, 
+textarea {
+    width: 100%;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 1px solid var(--title-color);
+    resize: none;
+    color: var(--title-color);
+}
+
+.hello {
+    /* width: 6rem; */
+    padding: 1.2rem 2.5rem;
+}
+
+
+
+/* ================ Media Quary ================= */
+@media screen and (max-width:1040px){
+   .container.contact_-container{
+    grid-template-columns: 1fr;
+    display: grid;
+    gap: 2rem;
+   }
+}
+
+
+/* ================ Media Quary ================= */
+
+@media screen and (max-width:600px){
+    .container.contact_-container{
+        width: var(--container-width-sm);
+       }
+}
